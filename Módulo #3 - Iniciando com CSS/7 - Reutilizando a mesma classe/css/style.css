@@ -1,0 +1,28 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+html, body{
+	height: 100%;
+}
+
+.tipo1{
+	color: rgb(100,100,100);
+}
+
+
+/*permanece a ultima configuração
+realizada portando as especificações
+do tipo2. O CSS lê na ordem que o código
+foi escrito, é alterado o nível de 
+especificação pela chamada da classe, id
+ou tag. A ordem só importa se o nível
+de especificação for o mesmo*/
+.link_{
+	font-size: 30px;
+}
+
+.tipo2{
+	font-size: 50px;
+}

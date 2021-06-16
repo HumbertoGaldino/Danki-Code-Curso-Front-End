@@ -1,0 +1,23 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+html, body{
+	height: 100%;
+}
+
+/*Overflow - utilizado 
+para quando o texto ultrapassar
+o tamanho definido*/
+.box{
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	background: gray;
+	overflow: auto;
+}
+
+.box p{
+	width: 300px;
+}

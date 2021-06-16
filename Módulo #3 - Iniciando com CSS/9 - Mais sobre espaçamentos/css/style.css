@@ -1,0 +1,27 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+html, body{
+	height: 100%;
+}
+
+/*box-sizing é utilizado para 
+manter a largura de 1280px ou 
+seja o padding não aumenta
+essa largura*/
+.center{
+	box-sizing: border-box;
+	width: 1280px;
+	margin: 0 auto;
+	padding: 30px;
+	background-color: grey;
+}
+
+.artigo{
+	width: 100%;
+	/*sentido horário: cima, direita, baixo,
+	esquerda margin:50px 30px 50px 50px;*/
+	margin-bottom: 40px;
+}

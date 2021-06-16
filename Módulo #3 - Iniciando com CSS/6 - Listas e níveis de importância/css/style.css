@@ -1,0 +1,79 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+html, body{
+	height: 100%;
+}
+
+.lista, ol{
+	list-style-position: inside;
+	list-style: decimal;
+	margin-left: 20px;
+}
+
+/*mais especifico, toda li dentro da classe
+lista receba essas propriedades*/
+
+.lista li{
+	color: green;
+	font-size: 14px;
+	margin-top:10px;
+}
+
+/*ignorado  por ser menos especifico que 
+as configurações acima, contendo apenas 
+a classe*/
+
+.item3{
+	color:red;
+}
+
+/*mais especifico que o item acima*/
+
+.lista .item3{
+	color:purple;
+}
+
+/*mais especifico que os item acima
+na classe lista que contenha uma li
+com uma classe item3 aplique as 
+configurações abaixo */
+
+.lista li.item3{
+	color:orange;
+}
+
+
+/* > apenas a li que estiver diretamente
+dentro da ol*/
+
+ol > li{
+	color: purple;
+}
+
+
+.um{
+	width: 500px;
+	height: 500px;
+	background:darkcyan;
+}
+
+.um > .dois{
+	width: 300px;
+	height: 300px;
+	background: purple;
+}
+
+.um > .tres{
+	width: 100px;
+	height: 100px;
+	background:brown;
+}
+
+.um > .tres > .quatro{
+	width: 50px;
+	height: 50px;
+	background:yellow;
+}

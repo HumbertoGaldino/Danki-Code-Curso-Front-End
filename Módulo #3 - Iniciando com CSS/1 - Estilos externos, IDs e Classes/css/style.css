@@ -1,0 +1,27 @@
+
+/*id*/
+#div1 h1{
+	color:red;
+}
+
+/* ou se estiver diretamente dentro
+
+#div1 > h1{
+	color:red;
+}
+
+ataque o h1 apenas se ele estiver dentro da div1,
+ou seja, se for a div filha
+*/
+
+/*Classe*/
+
+.div2 h1{
+	color: orange;
+}
+
+/*
+id - atribuido se for utilizado apenas uma vez.
+	Não pode utilizar mais de uma vez
+
+classe - quando for ser utilizado mais de uma vez
