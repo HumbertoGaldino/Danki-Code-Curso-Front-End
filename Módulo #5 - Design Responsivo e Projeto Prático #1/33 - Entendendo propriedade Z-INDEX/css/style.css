@@ -1,0 +1,53 @@
+*{
+ margin:0;
+ padding:0;
+ box-sizing: border-box;
+}
+
+html, body{
+	width: 100%;
+	height: 100%;
+}
+
+.slider{
+	width: 97%;
+	margin:0 auto;
+	max-width: 700px;
+	height: 500px;
+	border: 1px solid #ccc;
+	position: relative;
+}
+
+.img-slider{
+	position: absolute;
+	left:0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*Z-INDEX - define a posição do 
+elemento
+
+eixo x - trabalha na horizontal
+eixo y - trabalha na vertical
+eixo z - trabalha na profundidade
+quanto menor a profundiade mais 
+atras ele vai ficar e vice-versa*/
+
+.one{
+	background-color: red;
+	z-index: 3;
+}
+
+.two{
+	background-color: orange;
+	z-index: 2;
+	left: 40px;
+}
+
+.three{
+	background-color: pink;
+	z-index: 1;
+	left: 80px;
+}

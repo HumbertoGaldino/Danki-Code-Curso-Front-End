@@ -1,0 +1,22 @@
+*{
+ margin:0;
+ padding:0;
+}
+
+/*Para se usar porcentagem no 
+margin e no padding o tamanho
+sempre se definirá pelo tamanho
+do elemento pai*/
+
+.parent{
+	width: 50%;
+	height: 400px;
+	background-color: orange;
+}
+
+.box{
+	width: 50%;
+	padding-top:25%;
+	margin-left: 50%;
+	background-color: gray;
+}
