@@ -1,0 +1,31 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+html, body{
+	height: 100%;
+}
+
+a[href]{
+	background-color: yellow;
+}
+
+a[href="http://www.google.com"]{
+	background-color: purple;
+}
+
+/*atributo que contenha a palavra*/
+a[href*="google"]{
+	background-color: darkcyan;
+}
+
+/*Ache a palavra google em qualquer
+lugar, tem que estar entre espaços
+
+ex.: href="google danki hotmail yahoo "*/
+a[href~="google"]{
+	background-color: green;
+}
+
+

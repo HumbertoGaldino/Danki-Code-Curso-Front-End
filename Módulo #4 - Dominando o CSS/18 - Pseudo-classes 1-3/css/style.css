@@ -1,0 +1,59 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+html, body{
+	height: 100%;
+}
+
+.teste, .teste1, .teste2{
+	width: 300px;
+	height: 300px;
+	background-color: #ccc;
+	margin-top: 30px;
+	margin-left: 30px;
+	display: inline-block;
+
+}
+
+.teste1{
+	background-color: rgb(98,98,98);
+}
+
+.teste2{
+	background-color: rgb(50,50,50);
+}
+
+/*hover: Ao passar o mouse*/
+.teste:hover{
+	background-color: red;
+}
+
+/*Active: ao clicar com o mouse*/
+.teste1:active{
+	background-color: black;
+}
+
+
+/*Focus: serve quando clicamos e focamos nosso
+elemento do formulário*/
+.testeform:focus{
+	background-color: purple;
+}
+
+
+.textarea1{
+	display: block;
+	width: 600px;
+	height: 400px;
+}
+
+.link1{
+	font-size: 30px;
+}
+
+/*Visited: usado para quando acessamos o link*/
+.link1:visited{
+	color: orange;
+}

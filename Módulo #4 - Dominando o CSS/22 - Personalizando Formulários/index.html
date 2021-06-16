@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Meu Título</title>
+	<meta charset="utf-8"/>
+	<link href="css/style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+
+	<form>
+		<fieldset> <!--Grupo de formulário-->
+			<legend>Meu Formulário</legend> <!--Legenda-->
+			<div><input type="text" name="nome" placeholder="Digite o seu nome:" /></div>
+			<div><input type="text" name="email" placeholder="Digite seu e-mail:"/></div>
+
+			<div>
+				<select name="lista">
+					<option disabled selected>Qual sua idade?</option>
+					<option value="20">20</option>
+					<option value="25+">25+</option>
+					<option value="40+">40+</option>
+				</select>
+			</div>
+
+			<h2>Qual sua cidade?</h2>
+			<div class="input">
+				<div>
+					<input type="radio" name="cidade" value="Florianópolis" /> 
+					<span>Florianópolis</span>
+				</div>
+
+				<div>
+					<input type="radio" name="cidade" value="São Paulo" />
+					<span>São Paulo</span>
+				</div>
+
+				<div>
+					<input type="radio" name="cidade" value="Rio de Janeiro" />
+					<span>Rio de Janeiro</span>
+				</div>
+			</div>
+
+			<h2>O que você gosta de comer?</h2>
+				<div class="input">
+					<div>
+						<input type="checkbox" name="comida[]" value="" /> 
+						<span>Fruta</span>
+					</div>
+
+					<div>
+						<input type="checkbox" name="comida[]" value="" />
+						<span>Fast Food</span>
+					</div>
+
+					<div>
+						<input type="checkbox" name="comida[]" value="" />
+						<span>Salada</span>
+					</div>
+				</div>
+
+			<div>
+				<textarea name="observacao" placeholder="Possui alguma observação?"></textarea>
+			</div>
+
+
+			<!--SELECIONAR ARQUIVO-->
+
+			<input id="file" type="file" name="file" />
+			<label id="labelfile" for="file">Anexar Arquivos</label>
+
+			<!--FIM SELECIONAR ARQUIVO-->
+			<div>	
+				<select id="item">
+					<option>Item 1</option>
+					<option>Item 2</option>
+				</select>
+			</div>
+
+			<div>
+				<input name="checkbox" type="checkbox" id="check1" />
+				<label class="labelcheck" for="check1"></label>
+			</div>
+			<div>
+				<input name="checkbox" type="checkbox" id="check2" />
+				<label class="labelcheck" for="check2"></label>
+			</div>
+			
+			<div>
+				<input type="submit" name="acao" value="Enviar!" />
+			</div>
+		</fieldset>
+	</form>
+
+</body>
+</html>

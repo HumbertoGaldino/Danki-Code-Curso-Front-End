@@ -1,0 +1,22 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+html, body{
+	height: 100%;
+}
+
+.box{
+	width: 400px;
+	height: 400px;
+	background: gray;
+}
+
+/*inherit - herdar
+.box span{
+	display: inline-block;
+	width: inherit;
+	height: inherit;
+	background:red;
+} */

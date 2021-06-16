@@ -1,0 +1,159 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+html, body{
+	height: 100%;
+}
+
+form{
+	width: 96%;
+	max-width: 600px;
+	margin:30px auto;
+	text-align: center;
+}
+
+form fieldset{
+	padding: 20px 40px;
+	border: 3px solid #ccc;
+}
+
+form legend{
+	font-size: 17px;
+	color: #ccc;
+	text-align: center;
+}
+
+form input[type=text]{
+	margin-top:30px;
+	width: 80%;
+	padding: 5px 13px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	font-family: tahoma;
+}
+
+form input[type=text]:focus, 
+form select:focus, 
+form textarea:focus{
+	outline: 0;
+}
+
+form select{
+	color: rgb(100,100,100);
+	width: calc(80% + 28px);
+	margin-top: 30px;
+	padding: 10px 30px;
+	display: inline-block;
+	border: 1px solid #ccc;
+}
+
+/*Cor opção de idade disabilitada*/
+form select option[disabled]{
+	color:purple;
+}
+
+form h2{
+	margin-top: 20px;
+	color: rgb(100,100,100);
+}
+
+.input{
+	display: inline-block;
+	text-align: left;
+	margin-top: 20px;	
+}
+
+.input span{
+	margin-left: 13px;
+	font-size: 16px;
+	color:rgb(130,130,130);
+}
+
+/*Área de Texto*/
+
+form textarea{
+	margin-top: 30px;
+	width: 80%;
+	height: 140px;
+	padding: 10px 13px;
+	resize: none; /*redimensionar*/
+	border: 1px solid #ccc;
+	font-family: tahoma;
+}
+
+/*ENVIAR ARQUIVO*/
+input[type=file]{
+	display: none;
+}
+
+#labelfile{
+	/*display: inline; O PADRÃO DE LABEL É INLINE, P/ APLICAR ESTILO DEVE SER INLINE-BLOCK*/
+	display: inline-block;
+	width: 220px;
+	height: 40px;
+	background-color: #ccc;
+	color: white;
+	text-align: center;
+	line-height: 40px;
+	font-size: 17px;
+	margin:30px auto;
+	cursor: pointer;
+}
+
+/*FIM BOTÃO ARQUIVO*/
+
+/*SELECT BOX*/
+#item{
+	width: 220px;
+	height: 40px;
+	background-image: url('../imagens/icone-check-1.png');
+	background-size: 25px 20px;
+	background-repeat: no-repeat;
+	background-position: right;
+	-webkit-appearance:none; /*OUTROS NAVEGADORES*/
+	-moz-appearance:none; /*FIREFOX*/
+	margin-top: 5px;
+}
+
+/*SELECT BOX APPEARANCE PARA INTERNET EXPLORER*/
+
+#item::-ms-expand{
+	display: none;
+}
+
+/*CHECKBOX*/
+
+input[type=checkbox]{
+	display: none;
+}
+
+.labelcheck{
+	display: inline-block;
+	margin-top: 10px;
+	width: 30px;
+	height: 30px;
+	background-color: green;
+}
+
+input[type=checkbox]:checked + .labelcheck{
+	background-color: purple;
+}
+
+
+
+/*Botão Enviar*/
+
+form input[type=submit]{
+	border: 2px solid rgb(130,130,130);
+	margin-top: 30px;
+	background-color: transparent;
+	font-size: 16px;
+	color:white;
+	background-color: rgb(140,140,140);
+	width: 140px;
+	height: 40px;
+	cursor: pointer;
+}
+

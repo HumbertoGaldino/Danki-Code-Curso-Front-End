@@ -1,0 +1,53 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+html, body{
+	height: 100%;
+}
+
+.bg{
+	
+	/*efeito paralax*/
+	width: 100%;
+	margin:0 auto;
+	height: 30vw;
+	background-image:url('../imagens/sunset.jpg'); 
+	background-color: red;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment:fixed; 
+	
+	/*
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 110% 110%;
+	*/
+}
+
+.box{
+	width: 100%;
+	margin:0 auto;
+	height: 900px;
+	text-align: center;
+	background-color: rgb(200,200,200);
+}
+
+.item{
+	width: 33.3%;
+	margin-right: -4px;
+	display: inline-block;
+}
+
+/*classe inserida para remover o espaço 
+extra criado pelo inline-block*/
+.last{
+	margin-right: 0;
+}
+
+
+.item p{
+	display: inline-block;
+	text-align: left;	
+}

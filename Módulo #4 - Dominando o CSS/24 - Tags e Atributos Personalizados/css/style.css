@@ -1,0 +1,21 @@
+/* "*" -> significa que pegamos todos os elementos da página*/
+
+*{
+	margin:0;
+	padding: 0;
+}
+
+html, body{
+	height: 100%;
+}
+
+minhatag{
+	display: block;
+}
+
+minhatag.tag_especial{
+	background: green;
+	width: 300px;
+	height: 400px;
+}
+

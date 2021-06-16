@@ -1,0 +1,55 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+html, body{
+	height: 100%;
+}
+
+/*
+table{
+	width: 900px;
+	margin:0 auto;
+	/*tirar espaço das bordas
+	border-collapse: collapse;
+}
+
+table tr td{
+	height: 30px;
+	border: 3px solid black;
+}*/
+
+/*
+fixed- acompanha a página
+
+absolute - fixo no lugar que 
+for colocado, não acompanha 
+a página
+
+relative - segue a posição
+que foi colocada no código
+html fica na mesma posição
+caso haja uma div acima ele 
+fica abaixo dela. Se for uma
+div abaixo ele se posiciona
+exatamente acima dela
+*/
+.menu-fixed{
+	position: fixed;
+	top: 40px;
+	left: 40px;
+	width: 200px;
+	height: 200px;
+	background:#069;
+}
+
+.box{
+	width: 100%;
+	height: 1400px;
+	background:green;
+}
+
+.box p{
+	width: 400px;
+}

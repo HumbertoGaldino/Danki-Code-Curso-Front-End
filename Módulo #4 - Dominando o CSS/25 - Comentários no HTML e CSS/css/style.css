@@ -1,0 +1,12 @@
+/* "*" -> significa que pegamos todos os elementos da página*/
+
+*{
+	margin:0;
+	padding: 0;
+}
+
+html, body{
+	height: 100%;
+}
+
+/*COMENTÁRIO*/

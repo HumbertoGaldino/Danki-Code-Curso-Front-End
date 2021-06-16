@@ -1,0 +1,53 @@
+/* "*" -> significa que pegamos todos os elementos da página*/
+
+*{
+	margin:0;
+	padding: 0;
+}
+
+html, body{
+	height: 100%;
+}
+
+h2{
+	margin-top: 15px;
+	font-weight: 700;
+	font-size: 16px;
+	font-family: 'Newsreader', serif;
+}
+
+/*Utilizar Fonte Salva Na Pasta do Diretório*/
+@font-face{
+	src:url('../fonts/IndieFlower-Regular.ttf');
+	font-family: "Minha Fonte";
+}
+
+p{
+	font-family: "Minha Fonte";
+}
+
+div{
+	margin-top: 30px;
+}
+
+.box p{
+	font-family: "Minha Fonte";
+}
+
+/*!important - utilizado para ignorar maior nível de especificação e aplicar
+estilos a níveis menores*/
+.text{
+	font-family: tahoma !important;
+}
+
+/*Aplique em todos os elementos diretamente dentro do formulário e aplique
+a fonte*/
+form > *{
+	font-family: "Minha Fonte";
+}
+
+/*Aplique em todos os elementos independente de estarem dentro de outras
+tags ou não*/
+form *{
+	font-family: "Minha Fonte";
+}
