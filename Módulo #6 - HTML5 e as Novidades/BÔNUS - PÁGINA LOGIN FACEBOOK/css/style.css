@@ -1,0 +1,329 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: arial;
+}
+
+html,body{
+	width: 100%;
+	height: 100%;
+}
+
+.center{
+	max-width: 1200px;
+	padding: 0 2%;
+	margin: 0 auto;
+}
+
+.clear{
+	clear: both;
+}
+
+/*Inicio do Header*/
+
+header{
+	width: 100%;
+	height: auto;
+	background-color: #44619d;
+	padding: 10px 0;
+	position: relative;
+}
+
+header div.logo img{
+	width: 175px;
+	height: 35px;
+	float: left;
+	margin-top: 20px;
+}
+
+/*Formulário de Login*/
+
+form.form-login{
+	float: right;
+}
+
+.form-login, .form-login-element{
+	display: inline-block;
+}
+
+.form-login-element{
+	margin-right: 10px;
+}
+
+.form-login-element p{
+	color: white;
+	font-size: 14px;
+}
+
+.form-login a{
+	font-size: 12px;
+	color: #83b4d8;
+	text-decoration: none;
+	margin-left: 164px;
+}
+
+.form-login-element input[type=email]{
+	width: 150px;
+	height: 23px;
+	margin-top: 4px;
+	padding: 5px;
+}
+
+.form-login-element input[type=password]{
+	width: 150px;
+	height: 23px;
+	margin-top: 4px;
+	padding: 5px;
+}
+
+
+.form-login-element input[type=submit]{
+	width: 50px;
+	height: 23px;
+	background-color: #4267b2;
+	border: 1px solid black;
+	color: white;
+	cursor: pointer;
+}
+
+.form-login-element input[type=submit]:hover{
+	background-color: #365188;
+}
+
+/*Fim do Header*/
+
+main{
+	background: linear-gradient(white,#d3d8e8);
+	padding: 20px 0;
+}
+
+/*Inicio Info*/
+
+div.info{
+	width:60%;
+	height: auto;
+	float: left;
+	padding: 13px;
+}
+
+div.info img{
+	width: 95%;
+	float: left;
+}
+
+div.info h2{
+	width: 70%;
+	color: #0e385f;
+	font-size: 18px;
+}
+
+/*Fim Info*/
+
+/*Inicio Formulário de Cadastro*/
+
+div.form-cadastro{
+	width: 40%;
+	height: 100%;
+	max-width: 415px;
+	float: left;
+	color: #333333;
+	padding: 3px;
+}
+
+div.form-cadastro h1{
+	font-size: 26px;
+	color: #0e385f;
+}
+
+div.form-cadastro h3{
+	font-size: 17px;
+	margin: 10px 0;
+	font-weight: normal;
+}
+
+.form-nome-sobrenome{
+	float: left;
+	padding-right: 5px;
+	width: 50%;
+}
+
+.form-email-senha{
+	float: left;
+	padding-right: 5px;
+	width: 100%;
+}
+
+.form-cadastro input[type=text],
+.form-cadastro input[type=email], 
+.form-cadastro input[type=password]{
+	width: 100%;
+	height: 40px;
+	margin-top: 10px;
+	border: 1px solid #ccd0d5;
+	border-radius: 5px;
+	background-color: white;
+	padding: 10px;
+}
+
+.form-data-nascimento p{
+	font-size: 17px;
+	color: #90949c;
+	font-weight: bold;
+	margin-top:15px;
+	margin-bottom: 10px;
+}
+
+form select.nascimento{
+	float: left;
+	width: 75px;
+	height: 30px;
+	border: 1px solid grey;
+}
+
+.form-genero h2{
+	font-size: 17px;
+	color: #90949c;
+	font-weight: bold;
+	margin-top:15px;
+	margin-bottom: 10px;
+}
+
+.form-genero p{
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.form-genero input[type=radio]{
+	margin-right: 3px;
+}
+
+.form-termos p{
+	font-size: 12px;
+	color: #90949c;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.form-termos a{
+	text-decoration: none;
+	color: #385898;
+}
+
+.form-cadastro input[type=submit]{
+	width: 195px;
+	height: 40px;
+	background:linear-gradient(#65ab53,#598d45);
+	border-radius: 5px;
+	border: 1px solid black;
+	color: white;
+	font-size: 20px;
+}
+
+.form-criar-pagina{
+	margin-top: 30px;
+}
+
+.form-criar-pagina p{
+	font-size: 13px;
+	font-weight: bold;
+	color: #666666;
+}
+
+.form-criar-pagina a{
+	text-decoration: none;
+	color: #385898;
+}
+
+
+/*Fim Formulário de Cadastro*/
+
+/*Footer*/
+
+footer{
+	width: 100%;
+	height: 50px;
+	background-color: white;
+	padding: 15px;
+}
+
+footer p{
+	color: grey;
+	font-size: 12px;
+	text-align: center;
+}	
+
+/*FIM DO FOOTER*/
+
+/*Media Queries*/
+
+@media screen and (max-width: 768px){
+
+	header div.logo{
+		width: 180px;
+		margin: 0 auto;
+	}
+
+	header div.logo img{
+		float: none;
+	}
+
+	form.form-login{
+		width: 100%;
+		text-align: center;
+		margin-top: 20px;
+		float: none;
+	}
+
+	.form-login, .form-login-element{
+		display: block;
+		margin-top: 10px;
+	}
+
+	.form-login-element p{
+		color: white;
+		font-size: 14px;
+	}
+
+	.form-login a{
+		font-size: 12px;
+		color: #83b4d8;
+		margin: 0 auto;
+		margin-left: -4px;
+	}
+
+	.form-login-element input[type=email]{
+		max-width: 320px;
+		width: 100%;
+		height: 30px;
+	}
+
+	.form-login-element input[type=password]{
+		max-width: 320px;
+		width: 100%;
+		height: 30px;
+	}
+
+
+	.form-login-element input[type=submit]{
+		width: 140px;
+		margin-bottom: 10px;
+	}
+
+	div.info{
+		display: none;
+	}
+
+	div.form-cadastro{
+		width: 100%;
+		text-align: center;
+		margin: 0 auto;
+		float: none;
+	}
+
+	form select.nascimento{
+		float: none;
+		margin-right: -4px;
+	}
+
+}
